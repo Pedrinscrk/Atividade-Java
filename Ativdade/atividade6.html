@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <script>
+        function imc() {
+            var peso = parseFloat(prompt("Digite seu peso:"));
+            var altura = parseFloat(prompt("Digite sua altura:"));
+            alert("Seu IMC: " + peso / (altura * altura));
+        }
+    </script>
+      <style>
+        button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+    <button onclick="imc()">Calcular IMC</button>
+    <button onclick="location.href='index.html'">Início</button>
+
+</body>
+</html>

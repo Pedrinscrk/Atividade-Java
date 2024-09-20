@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+    <script>
+        function fibonacci() {
+            let a = 0;
+            let b = 1;
+            let somapares = 0;
+            let temp = 0;
+            while (a <= 50000) {
+                if (a % 2 === 0) {
+                    somapares += a;
+                }
+                temp = a;
+                a = b;
+                b = temp + b;
+            }
+            alert(somapares);
+        }
+    </script>
+      <style>
+        button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+    <button onclick="fibonacci()">Fibonacci</button>
+    <button onclick="location.href='index.html'">Início</button>
+
+</body>
+</html>

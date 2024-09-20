@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrir o maior e o menor</title>
+    <script>
+        function descobrir() {
+            var n1 = parseInt(prompt("Digite um número:"));
+            var n2 = parseInt(prompt("Digite um número:"));
+            var n3 = parseInt(prompt("Digite um número:"));
+
+            let maior = Math.max(n1, n2, n3);
+            let menor = Math.min(n1, n2, n3);
+
+            alert("O maior número é " + maior + " e o menor número é " + menor);
+        }
+    </script>
+      <style>
+        button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+    <button onclick="descobrir()">Descobrir o maior e o menor</button>
+    <button onclick="location.href='index.html'">Início</button>
+
+</body>
+</html>

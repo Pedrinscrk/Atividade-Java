@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Primo</title>
+    <script>
+        function nprimo() {
+            var posicao = prompt("Qual a posição do número: ");
+            let primo, n = 0, teste;
+
+            for (i = 2; i > 1; i++) {
+                teste = true;
+                for (j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        teste = false;
+                        break;
+                    }
+                }
+                if (teste == true) {
+                    primo = i;
+                    n++;
+                }
+                if (n == posicao)
+                    break;
+            }
+            alert(primo);
+        }
+    </script>
+      <style>
+        button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+    <button onclick="nprimo()">Numero Primo</button>
+    <button onclick="location.href='index.html'">Início</button>
+
+</body>
+</html>
